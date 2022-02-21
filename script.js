@@ -38,7 +38,14 @@ function generatePassword() {
     addUpperCase === false &&
     addNumbers === false &&
     addSpecChar === false) {
-    alert("Please select at least ONE of the criteria to generate your password.");
+      alert("Please select at least ONE of the criteria to generate your password.");
+
+      var addLowerCase = confirm("Do you want your Password to include lowercase characters? Press 'OK' to add and 'Cancel' to remove.");
+      var addUpperCase = confirm("Do you want your Password to include uppercase characters? Press 'OK' to add and 'Cancel' to remove.");
+      var addNumbers = confirm("Do you want your Password to include numbers? Press 'OK' to add and 'Cancel' to remove.");
+      var addSpecChar = confirm("Do you want your Password to include special characters? Press 'OK' to add and 'Cancel' to remove.");
+
+  }
 
 // document.getElementById('generate').addEventListener('click', () => {
 
