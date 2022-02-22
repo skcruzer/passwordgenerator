@@ -1,6 +1,6 @@
 HW # 03 JavaScript: Password Generator
 
-##Link to Deployed Application
+## Link to Deployed Application
 https://skcruzer.github.io/passwordgenerator/
 
 ## Assignment
