@@ -62,7 +62,19 @@ function generatePassword() {
   return randomPassword;
 }
 
+//Function to write password to generate the special password
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.getElementById("password");
 
+  passwordText.value = password;
+
+}
+
+//Event listener added to generate button to click and generate password given certain criteria 
+generateBtn.addEventListener("click", writePassword);
+
+//Below was already in script.js, did not use arrow functions for my password generator
 // document.getElementById('generate').addEventListener('click', () => {
 
 // })
