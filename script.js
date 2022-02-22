@@ -46,6 +46,22 @@ function generatePassword() {
       var addSpecChar = confirm("Do you want your Password to include special characters? Press 'OK' to add and 'Cancel' to remove.");
 
   }
+  //Password Generator
+  let passwordName = []
+  if (addLowerCase) { passwordName = passwordName.concat(lowerCase) }
+  if (addUpperCase) { passwordName = passwordName.concat(upperCase) }
+  if (addNumbers) { passwordName = passwordName.concat(numbers) }
+  if (addSpecChar) { passwordName = passwordName.concat(specChar) }
+
+  let randomPassword = ""
+
+  for (var i = 0; i < addLength; i++) {
+    randomPassword = randomPassword + passwordName[Math.floor(Math.random() * passwordName.length)];
+  }
+
+  return randomPassword;
+}
+
 
 // document.getElementById('generate').addEventListener('click', () => {
 
